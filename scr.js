@@ -300,7 +300,8 @@ if (device.mobile()) {
     Element.requestFullscreen();  
     document.getElementById("style").href="CSS/designForMob.css";
     alert("это телефон");
-
 } else if (device.desktop()) {
     document.getElementById("style").href="CSS/designForPC.css";
+} else if (device.tablet()) {
+    alert("Это хуй");
 }

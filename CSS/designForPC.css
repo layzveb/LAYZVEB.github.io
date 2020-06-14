@@ -41,7 +41,6 @@ html{
   }
 
   .knop1{
-    align: middle;
     position: absolute;
     height: 4.4vh;
     width: 18.5vh;
@@ -127,7 +126,6 @@ html{
 
   .textknop{
     display: flex;
-    align: middle;
     text-align: center;
     font-size: 1.7vh;
     margin-top: 0.9vh;
@@ -207,6 +205,12 @@ html{
     border-radius: 20px;
     border: 3px solid #312322;
     box-shadow: 0 0 25px #101010;
+  }
+
+  .box2 {
+    display: block;
+    width: 50vh;
+    height: 75vh;
   }
 
   .VK, .IG, .FB {
