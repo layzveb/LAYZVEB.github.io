@@ -301,3 +301,24 @@ if (device.desktop()) {
 } else {
     alert("Это хуй");
 }
+
+/* АНИМАЦИЯ ЗАГРУЗКИ */
+  document.getElementById('123').style.animation = 'puse 2.5s ease-out infinite';
+setTimeout(function ReStyle2() {
+  document.getElementById('321').style.animation = 'puse 2.5s ease-out infinite';
+}, 500);
+clearInterval();
+
+setTimeout(function ReStyleback1() {
+  document.getElementById('123').style.animation = 'none';
+}, 5000);
+setTimeout(function ReStyleback1() {
+  document.getElementById('321').style.animation = 'none';
+}, 5000);
+setTimeout(function ReStyleback1() {
+  document.getElementById('back').style.animation = 'izchez .2s ease-in infinite';
+}, 5000);
+setTimeout(function ReStyleback1() {
+  document.getElementById('back').style.display = 'none';
+}, 5199);
+clearInterval();
