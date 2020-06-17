@@ -298,8 +298,6 @@
 
 if (device.desktop()) {
     document.getElementById("style").href="CSS/designForPC.css";
-} else {
-    alert("Это хуй");
 }
 
 /* АНИМАЦИЯ ЗАГРУЗКИ */
@@ -317,8 +315,8 @@ setTimeout(function ReStyleback1() {
 }, 5000);
 setTimeout(function ReStyleback1() {
   document.getElementById('back').style.animation = 'izchez .2s ease-in infinite';
-}, 5000);
+}, 5200);
 setTimeout(function ReStyleback1() {
   document.getElementById('back').style.display = 'none';
-}, 5199);
+}, 5399);
 clearInterval();
