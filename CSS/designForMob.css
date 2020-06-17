@@ -7,7 +7,7 @@ html{
     -o-user-select: none;
     -webkit-user-select: none;
 
-    overflow: hidden;
+    
   }
 
   /* ФОРМОЧКИ  */
@@ -19,7 +19,7 @@ html{
   .loading {
     position: fixed;
 
-    left: 47%;
+    left: 50%;
     top: 50%;
 
     transform: translate(-50%, -50%);
