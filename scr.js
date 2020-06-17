@@ -298,6 +298,8 @@
 
 if (device.desktop()) {
     document.getElementById("style").href="CSS/designForPC.css";
+} else {
+  window.scrollTo(1000,0);
 }
 
 /* АНИМАЦИЯ ЗАГРУЗКИ */
