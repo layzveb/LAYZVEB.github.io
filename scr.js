@@ -319,6 +319,8 @@ setTimeout(function ReStyleback1() {
   document.getElementById('back').style.animation = 'izchez .2s ease-in infinite';
 }, 5200);
 setTimeout(function ReStyleback1() {
-  document.getElementById('back').style.display = 'none';
+  document.getElementById('back').style.zIndex = '-1';
+  document.getElementById('wp').style.zIndex = '-1';
+  document.getElementById('pulse').style.display = 'none';
 }, 5399);
 clearInterval();
