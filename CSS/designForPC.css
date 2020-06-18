@@ -75,7 +75,7 @@ html{
 
     border-radius: 100%;
 
-    animation: none;
+    animation: puse 2.5s ease-out 2;
     /*puse 1.8s ease-out infinite*/
   }
 
