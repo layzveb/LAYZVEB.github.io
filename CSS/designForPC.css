@@ -1,5 +1,6 @@
 html{
     background: #221E1D;
+    /*transition-duration: .5s;*/
 
     -moz-user-select: none;
     -ms-user-select: none;
@@ -30,10 +31,10 @@ html{
   .loading {
     position: fixed;
 
-    left: 50%;
-    top: 50%;
+    left: 100vw;
+    top: 100vh;
 
-    transform: translate(-50%, -50%);
+    transform: translate(-50vw, -50vh);
     z-index: 0;
     }
     
@@ -60,7 +61,7 @@ html{
     width: 100vw;
     height: 100vh;
 
-    background-color: #221e1d;
+    background-color: #1d1717;
   }
 
   .pulse1 {
@@ -241,13 +242,14 @@ html{
 
   @keyframes izchez {
     0%{
-      background-color: #221E1D;
+      background-color: #1d1717;
     }
     99%{
-      background-color: #221e1d00;
+      background-color: #221E1D;
     }
     100%{
       background: none;
+      display: none;
     }
   }
 

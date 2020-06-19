@@ -307,11 +307,13 @@ setTimeout(function ReStyleback1() {
   document.getElementById('321').style.animation = 'puse 2.5s ease-out 2';
 }, 500);
 setTimeout(function ReStyleback1() {
-  document.getElementById('back').style.animation = 'izchez .2s ease-in infinite';
+  document.getElementById('back').style.animation = 'izchez .5s ease-out 2';
 }, 5200);
 setTimeout(function ReStyleback1() {
-  document.getElementById('back').style.zIndex = '-1';
+  /*document.getElementById('back').style.zIndex = '-1';*/
+  document.getElementById('back').style.display = 'none'
   document.getElementById('wp').style.zIndex = '-1';
   document.getElementById('pulse').style.display = 'none';
+  /*    background: #221E1D;*/ 
 }, 5399);
 clearInterval();
