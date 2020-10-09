@@ -22,22 +22,89 @@
   border-radius: 50%;
   border-bottom:  black;
 
-  animation: 5s Forload infinite ease;
+  animation: 2s Forload infinite ease;
+}
+
+.Liae{
+  height: 1vw;
+  width: 1vw;
+
+  position: absolute;
+  left: 17%;
+  top: 25%;
+  z-index: 2;
+  transform: translate(-3%, -4%);
+
+  background-color: black;
+  border-radius: 50%;
+  border: 4px solid white;
+}
+
+.Riae{
+  height: 1vw;
+  width: 1vw;
+
+  position: absolute;
+  right: 17%;
+  top: 25%;
+  z-index: 2;
+  transform: translate(-3%, -4%);
+
+  background-color: black;
+  border-radius: 50%;
+  border: 4px solid white;
+}
+
+.mouse{
+  height: 2vw;
+  width: 3.5vw;
+
+  position: absolute;
+  right: 0.5vw;
+  top: 7.5vw;
+  z-index: 2;
+  transform: translate(-50%, -75%);
+
+  border: 4px solid #5f2626;
+  border-radius: 30%;
+  border-bottom: black;
+}
+
+.Fail{
+  z-index: 2;
+  position: fixed;
+  height: 10%;
+  width: 80%;
+
+  top: 30%;
+  left: 35%;
+  transform: translate(-30%, -35%);
+
+  text-align: center;
+  font-family: 'Rubik', sans-serif;
+  font-size: 3vw;
+}
+
+.Img{
+  z-index: 2;
+  position: fixed;
+  bottom: 20vw;
+  left: 50%;
+
+  transform: translate(-50%);
+}
+
+.IMG{
+  width: 50vw;
 }
 
 @keyframes Forload {
   0%{
     transform: translate(-50%, -50%) rotate(50deg);
   }
-  /*25%{
-    transform: translate(-50%, -50%) rotate(50deg);
-  }*/
   50%{
     transform: translate(-50%, -50%) rotate(-50deg);
   }
-  /*75%{
-    transform: translate(-50%, -50%) rotate(-50deg);
-  }*/
   100%{
     transform: translate(-50%, -50%) rotate(50deg);
   }
