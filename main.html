@@ -1,0 +1,136 @@
+<head>
+<link href="flexbin-master/flexbin.css" type="text/css" rel="stylesheet" media="all" />
+
+<style media="screen">
+  p {
+    font-family: Arial, Helvetica;
+  }
+</style>
+<meta charset="UTF-8" />
+</head>
+<body style="background:gray;">
+  <div style="background:white; width:30%; padding: 30px; margin-left:auto; margin-right:auto;">
+    <img style="width:100%" src="https://loiro.ru/upload/iblock/41b/6s8mubq0vm6qm7nftcy1s8b9s4knx0f6.jpg" \>
+
+<!-- ======================================================================================================================================= -->
+
+<!-- ----------  Скрипт для увеличения картинок  ---------- -->
+<SCRIPT type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></SCRIPT>
+<script>
+  $(document).ready(function() { // Ждём загрузки страницы
+  	$(".imgPhoto").click(function(){	// Событие клика на маленькое изображение
+  	  	var img = $(this);	// Получаем изображение, на которое кликнули
+  		var src = img.attr('src'); // Достаем из этого изображения путь до картинки
+  		$("body").append("<div class='popup'>"+ //Добавляем в тело документа разметку всплывающего окна
+  						 "<div class='popup_bg'></div>"+ // Блок, который будет служить фоном затемненным
+  						 "<img src='"+src+"' class='popup_img' />"+ // Само увеличенное фото
+  						 "</div>");
+  		$(".popup").fadeIn(200); // Медленно выводим изображение
+  		$(".popup_bg").click(function(){	// Событие клика на затемненный фон
+  			$(".popup").fadeOut(200);	// Медленно убираем всплывающее окн
+        setTimeout(function() {	// Выставляем таймер
+  			  $(".popup").remove(); // Удаляем разметку всплывающего окна
+  			}, 200);
+  		});
+  	});
+  });
+</script>
+
+<style media="screen">
+  .imgDesk {
+    text-align: center;
+    #box-shadow:0px 0px 10px #06102673;
+    border-radius: .6vw;
+    padding: 10px;
+    display: inline-block;
+    margin-bottom: 50px;
+  }
+  .imgPhoto {
+    border-radius: 2%;
+    box-shadow:4px 4px 7px #06102673;
+    #width:48%;
+    height: 15%;
+    display: inline;
+    margin: 5px;
+    cursor: pointer;
+  }
+
+#------- для увеличение картинки при нажатии -------
+.popup {
+	position: absolute;
+	height:100%;
+	width:100%;
+	top:0;
+	left:0;
+	display:none;
+	text-align:center;
+}
+
+.popup_bg {
+	background:rgba(0,0,0,0.3);
+	position:fixed;
+	z-index:1;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: auto;
+  height: auto;
+}
+
+
+.popup_img {
+	position: fixed;
+	z-index:2;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	max-height: 90%;
+}
+
+.popup_img {
+  pointer-events: none;
+}
+</style>
+
+<p style="font-size:14pt;">
+</p>
+<hr>
+<p style="font-size:14pt;">
+	<b>20 апреля 2022</b> завершилась серия очных испытаний конкурса в номинациях "Учитель года" и "Воспитатель года" в Выборге. Конкурсанты провели классный час, представили свои мастер-классы.
+</p>
+ <br>
+<p style="font-size:14pt; margin-bottom:50px;">
+	На торжественной церемонии закрытия очных этапов в Выборге были объявлены 5 финалистов заключительного этапа - пресс-конференция и ток-шоу.
+</p>
+<br>
+<div class="imgDesk">
+  <img src="https://loiro.ru/upload/medialibrary/b70/zh73vk1ehvsg6lo52e6xod0d65mgosba.jpg" alt="" class="imgPhoto">
+  <img src="https://loiro.ru/upload/medialibrary/192/qg3znew5e2lyau4c26z039nyrzvc28r1.jpg" alt="" class="imgPhoto">
+  <img src="https://loiro.ru/upload/medialibrary/1e6/8mxbre3xh9vbsdk0p8plyhaabjrc5rlv.jpg" alt="" class="imgPhoto">
+  <img src="https://loiro.ru/upload/medialibrary/f68/nk9jg42m2sqtuwzoa49l3kznf0ehyey9.jpg" alt="" class="imgPhoto">
+  <img src="https://loiro.ru/upload/medialibrary/8e8/11p1i93o33k32evceyq16o4v4lkm1257.jpg" alt="" class="imgPhoto">
+  <img src="https://loiro.ru/upload/medialibrary/f82/bn7q2dvzdxuswl3msvjlvb2f2kklanhg.jpg" alt="" class="imgPhoto">
+  <img src="https://loiro.ru/upload/medialibrary/d69/kw24fvp97fzbxgnlhik798v8jduum6xg.jpg" alt="" class="imgPhoto">
+  <img src="https://loiro.ru/upload/medialibrary/abd/cfhqm60g14y2xqpa6ihlf0q5zdl8hqc0.jpg" alt="" class="imgPhoto">
+</div>
+ <br>
+<p style="font-size:16pt; margin-bottom:5px;">
+	ЖЕЛАЕМ УСПЕХОВ ФИНАЛИСТАМ!
+</p>
+<p style="font-size:14pt; margin-top:0;">
+	Благодарим Выборгский район за прекрасный прием, четкую организацию и комфортную атмосферу конкурса. Нам вместе удалось сделать долгожданный праздник!
+</p>
+ <br>
+<p style="font-size:16pt; margin-bottom:5px;">
+	СЛЕДИТЕ ЗА АНОНСАМИ ФИНАЛЬНЫХ ИСПЫТАНИЙ!
+</p>
+<p style="font-size:14pt; margin-top:0;">
+	Смотрите онлайн-трансляции, поддержите конкурсантов.
+</p>
+
+<!-- ======================================================================================================================================= -->
+
+</div>
+
+</body>
