@@ -18,10 +18,11 @@
       .conteinerWithNews{
         display: flex;
         margin:0 auto;
+        margin-top: 100px;
       }
       .blockNews{
-        display: inline-block;
-        box-shadow: 2px 2px 7px #06102673;
+        display: inline-block;;
+        box-shadow: 3px 3px 8px #06102673;
         border-radius: 1%;
         padding: 15px;
         width: 43%;
@@ -59,6 +60,29 @@
         box-shadow: 3px 3px 3px #06102673;
         transition: 0.2s ease-in-out;
       }
+
+      /*-- -------------- всплывающее окно -------------- --*/
+      #replaceme {
+          position: relative;
+      }
+      #replaceme span {
+          position: absolute;
+          -webkit-transition: opacity 0.2s linear;
+          transition: opacity 0.2s linear;
+      }
+      #replaceme h5:nth-child(2) {
+          opacity: 0;
+          transition: opacity 0s ease-in-out;
+      }
+      #replaceme:hover h5:nth-child(1) {
+          opacity: 0;
+          transition: opacity 0.1s ease-in-out;
+      }
+      #replaceme:hover h5:nth-child(2) {
+          opacity: 1;
+          transition: opacity 0.2s ease-in-out;
+      }
+
     </style>
 
     <div id="content">
@@ -83,15 +107,14 @@
           В целях повышения авторитета и статуса педагогических и руководящих работников системы образования, популяризации педагогического и управленческого опыта, выявления и поддержки талантливых, творчески работающих учителей, воспитателей, педагогов-психологов, руководящих работников, обеспечивающих образовательный процесс в образовательных организациях Ленинградской области.</span>
         </p>
       </div>
-      <br>
       <div class="conteinerWithNews">
         <div class="blockNews">
           <img class="imgNews" src="https://loiro.ru/upload/medialibrary/fab/uwfp3xgjuly2kmgv3mgbpp7b7dy0l4ut.png" alt="">
           <hr>
           <h4 class="textNews">ЛЕНИНГРАДСКИЙ ОБЛАСТНОЙ КОНКУРС ПРОФЕССИОНАЛЬНОГО ПЕДАГОГИЧЕСКОГО МАСТЕРСТВА В ВЫБОРГЕ 2022г.</h4>
           <div class="containerButt">
-              <a class="ssilka" href="https://drive.google.com/drive/folders/18cY5G1Sa4jwOJTrFneJY8Py4ebloG06Z"><div class="butt"><h5 style="margin: 0; font-family: Arial, Helvetica; font-width: bold;">ФОТО</h5></div></a>
-              <a class="ssilka" href="https://drive.google.com/drive/folders/18cY5G1Sa4jwOJTrFneJY8Py4ebloG06Z"><div class="butt" style="float: right;"><h5 style="margin: 0; font-family: Arial, Helvetica; font-width: bold;">ВИДЕО</h5></div></a>
+            <a class="ssilka" href="https://drive.google.com/drive/folders/18cY5G1Sa4jwOJTrFneJY8Py4ebloG06Z"><div class="butt"><h5 style="margin: 0; font-family: Arial, Helvetica; font-width: bold;">ФОТО</h5></div></a>
+            <a class="ssilka"><div class="butt" id="replaceme" style="float: right;"><h5 style="margin: 0; font-family: Arial, Helvetica; font-width: bold;">ВИДЕО</h5><h5 style="position: absolute; left:37%; top: 31%; margin: 0; font-family: Arial, Helvetica; font-width: bold;">СКОРО</h5></div></a>
           </div>
         </div>
         <div class="blockNews">
@@ -99,14 +122,14 @@
           <hr>
           <h4 class="textNews">ЛЕНИНГРАДСКИЙ ОБЛАСТНОЙ КОНКУРС ПРОФЕССИОНАЛЬНОГО ПЕДАГОГИЧЕСКОГО МАСТЕРСТВА В ВЫБОРГЕ 2022г.</h4>
           <div class="containerButt">
-              <a class="ssilka" href="https://drive.google.com/drive/folders/18cY5G1Sa4jwOJTrFneJY8Py4ebloG06Z"><div class="butt"><h5 style="margin: 0; font-family: Arial, Helvetica; font-width: bold;">ФОТО</h5></div></a>
-              <a class="ssilka" href="https://drive.google.com/drive/folders/18cY5G1Sa4jwOJTrFneJY8Py4ebloG06Z"><div class="butt" style="float: right;"><h5 style="margin: 0; font-family: Arial, Helvetica; font-width: bold;">ВИДЕО</h5></div></a>
+            <a class="ssilka" href="https://drive.google.com/drive/folders/18cY5G1Sa4jwOJTrFneJY8Py4ebloG06Z"><div class="butt"><h5 style="margin: 0; font-family: Arial, Helvetica; font-width: bold;">ФОТО</h5></div></a>
+            <a class="ssilka"><div class="butt" id="replaceme" style="float: right;"><h5 style="margin: 0; font-family: Arial, Helvetica; font-width: bold;">ВИДЕО</h5><h5 style="position: absolute; left:37%; top: 31%; margin: 0; font-family: Arial, Helvetica; font-width: bold;">СКОРО</h5></div></a>
           </div>
         </div>
+
+
+        <!-- ======================================================================================================================================= -->
+
       </div>
 
-      <!-- ======================================================================================================================================= -->
-
-    </div>
-
-  </body>
+    </body>
